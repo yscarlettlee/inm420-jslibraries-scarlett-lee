@@ -1,0 +1,176 @@
+body {
+    font-family: Optima, sans-serif;
+    background-color: black;
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling Header & Nav */
+.navbar-brand {
+    padding-left: 20px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.nav-item.active .nav-link,
+.navbar-brand:hover {
+    color: red;
+    transition: color 0.5s ease-in-out;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-nav {
+    padding: 0 20px;
+}
+
+.btn-reservations {
+    margin: 10px 0;
+}
+
+/* Hero Section */
+.hero {
+    height: auto;
+}
+
+/* Welcome Message - Typeit */
+.hero-title {
+    position: relative;
+    color: white;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    margin: 50px 0;
+}
+
+/* Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+    color: red;
+}
+
+.swiper-pagination-bullet {
+    background-color: red;
+}
+
+/* Main Contents */
+.menu,
+.sakebar,
+.private {
+    height: auto;
+    background-color: black;
+}
+
+.smaller-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-title {
+    font-family: "Segoe UI", "Trebuchet MS", Arial, sans-serif;
+    font-size: 2em;
+    position: relative;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+.section-description {
+    text-align: center;
+}
+
+/* Contact */
+.contact {
+    background-color: black;
+    color: white;
+}
+
+.contact-info {
+    font-size: 1em;
+    padding: 20px;
+}
+
+.contact-info h2,
+.contact-info h3 {
+    color: white;
+    font-family: "Segoe UI", "Trebuchet MS", Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+#mapcontact {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    width: 100%;
+}
+
+#mapcontact>div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Email link */
+#email a {
+    color: white;
+    transition: color 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+#email a:hover {
+    color: red;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-color: black;
+}
+
+/* Social Icons */
+.footer .fa-stack:hover .fa-circle {
+    color: silver;
+    transition: color 0.5s ease-in-out;
+}
+
+.social-icon {
+    color: black;
+}
+
+/* Mobile Responsive */
+@media (min-width: 992px) {
+    .navbar-nav {
+        padding-right: 20px;
+    }
+
+    .btn-reservations {
+        margin: 0;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .smaller-img {
+        max-width: 300px;
+    }
+
+    .contact-info {
+        font-size: 1.2em;
+    }
+}
